@@ -7,7 +7,6 @@ $('.page-scroll').on('click', function(e) {
         scrollTop: $(target).offset().top
     }, 800);
 
-
 	e.preventDefault();
 });	
 
@@ -19,6 +18,5 @@ function openNav() {
 
 function closeNav() {
     document.getElementById("menu-resv").style.width = "0%";
-    console.log('ok');
 }
 
