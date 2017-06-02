@@ -19,17 +19,38 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
+        <div id="btn-resv">     
+            <span onclick="openNav()" class="glyphicon glyphicon-align-justify" style="display: none">
+            </span>
+        </div> 
+            
+        <!-- <nav id="menu-resv"> -->
+            <div id="menu-resv" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
+                <div class="overlay-content">
+                    <ul>
+                        <li><a href="#about" class="page-scroll" onclick="closeNav()">About</a></li>
+                        <li><a href="#service" class="page-scroll" onclick="closeNav()">Service</a></li>
+                        <li><a href="#team" class="page-scroll" onclick="closeNav()">Team</a></li>
+                        <li><a href="#contact" class="page-scroll" onclick="closeNav()">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        <!-- </nav> -->
+
+        
         
         <header>
             <div class="container">
                 <div class="row">
                     <nav class="col-md-12">
-                        <a href="./" id="logo">
-                            <img src="img/logo.png" alt="Vision Studio">
-                        </a>
 
-                        <ul class="pull-right">
+                        <a href="./" id="logo">
+                            <img src="img/logo.png" alt="Vision Studio">    
+                        </a>
+                
+                        <ul class="pull-right" id="mainmenu">
                             <li><a href="#about" class="page-scroll">About</a></li>
                             <li><a href="#service" class="page-scroll">Service</a></li>
                             <li><a href="#team" class="page-scroll">Team</a></li>
@@ -45,14 +66,16 @@
 
         <div class="hero-image">
             <!-- <img src="img/hero3.jpg" alt="">     -->
-        
-            <div class="row">
-                <section class="tagline">
-                    <div class="col-sm-12 text-center tagline-text">
-                        <h2>Idea, art and technology</h2>
-                        <h2></h2>
-                    </div>
-                </section>
+            <div class="container">
+                        
+                <div class="row">
+                    <section class="tagline">
+                        <div class="col-sm-12 text-center tagline-text">
+                            <h2>Idea, art and technology</h2>
+                            <h2></h2>
+                        </div>
+                    </section>
+                </div>
             </div>
 
         </div>
