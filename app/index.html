@@ -23,11 +23,14 @@
             <span onclick="openNav()" class="glyphicon glyphicon-align-justify" style="display: none">
             </span>
         </div> 
-            
+    
         <!-- <nav id="menu-resv"> -->
             <div id="menu-resv" class="overlay">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
+              <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span>&times;</span></a> -->
+              <div id="cls-resv">
+                  <span onclick="closeNav()">&times;</span>
+              </div>
+              
                 <div class="overlay-content">
                     <ul>
                         <li><a href="#about" class="page-scroll" onclick="closeNav()">About</a></li>
@@ -38,8 +41,6 @@
                 </div>
             </div>
         <!-- </nav> -->
-
-        
         
         <header>
             <div class="container">
@@ -51,7 +52,7 @@
                         </a>
                 
                         <ul class="pull-right" id="mainmenu">
-                            <li><a href="#about" class="page-scroll">About</a></li>
+                            <li><a href="#home" class="page-scroll">About</a></li>
                             <li><a href="#service" class="page-scroll">Service</a></li>
                             <li><a href="#team" class="page-scroll">Team</a></li>
                             <li><a href="#contact" class="page-scroll">Contact</a></li>
@@ -64,7 +65,7 @@
             </div>
         </header>
 
-        <div class="hero-image">
+        <div id="hero-image">
             <!-- <img src="img/hero3.jpg" alt="">     -->
             <div class="container">
                         
@@ -121,7 +122,7 @@
                     <!-- row 1 -->
                     <div class="col-lg-3 col-sm-6 col-xs-6 text-center">
                         <img class="img-circle img-responsive img-center" src="img/team/male1.png" alt="">
-                        <p>Full Name</p>
+                        <p>Dedy Rosyadi</p>
                         
                     </div>
                     <div class="col-lg-3 col-sm-6 col-xs-6 text-center">
@@ -135,13 +136,13 @@
                         
                     </div>
                     <div class="col-lg-3 col-sm-6 col-xs-6 text-center">
-                        <img class="img-circle img-responsive img-center" src="img/team/male2.png" alt="">
+                        <img class="img-circle img-responsive img-center" src="img/team/female2.png" alt="">
                         <p>Full Name</p>
                         
                     </div>
 
                     <!-- row 2 -->
-                    <div class="col-lg-3 col-sm-6 col-xs-6 text-center">
+<!--                     <div class="col-lg-3 col-sm-6 col-xs-6 text-center">
                         <img class="img-circle img-responsive img-center" src="img/team/male3.png" alt="">
                         <p>Full Name</p>
                         
@@ -160,7 +161,7 @@
                         <img class="img-circle img-responsive img-center" src="img/team/female3.png" alt="">
                         <p>Full Name</p>
                         
-                    </div>
+                    </div> -->
                 </div>
 
         </section>
@@ -196,9 +197,12 @@
                 </div>
 
                 <div class="pull-right">
-                    <a href="#home" class="page-scroll go-top">
+                    <div class="go-top">
+                    <a href="#home" class="page-scroll">
                         <span class="glyphicon glyphicon-chevron-up"></span>
                     </a>
+                    </div>
+               
                 </div>
             </div>
         </footer>
