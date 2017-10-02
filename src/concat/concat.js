@@ -12634,12 +12634,13 @@ if (typeof jQuery === 'undefined') {
 $('.page-scroll').on('click', function(e) {
 	var target = $(this).attr('href');
 
-	// $('body').scrollTop(target.offset().top);
-	$('body').animate({
+    // $('body').scrollTop(target.offset().top);
+	$('html, body').animate({
         scrollTop: $(target).offset().top - 60
     }, 800);
 
 	e.preventDefault();
+
 });	
 
 
