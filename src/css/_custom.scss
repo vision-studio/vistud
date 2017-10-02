@@ -4,11 +4,10 @@
 .service-item {
 	@include transition-duration(.8s);
 	text-align: center;
-	// background-color: #fff;
 	border: 1px solid #e3e3e3;
-	padding: 50px;
-	margin-bottom: 10px;
-
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	min-height: 150px;
 	margin : 0 auto;
 
@@ -25,13 +24,13 @@
 }
 
 .service-box {
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 }
 
 
-.rd {color: #DA063F;}
-.gr {color: #3FC479;}
-.yl {color: #DDC148;}
+.rd {color: #e0300d;}
+.gr {color: #1db246;}
+.yl {color: #f2f122;}
 
 
 #menu-resv{
@@ -106,15 +105,17 @@ header {
 					@include transition-duration(.5s);
 					box-sizing:border-box;
 					color : $gray-light;
-					font-weight: 400;
+					// font-weight: 400;
 					font-size: 16px;
 					padding: 20px;
 					display: block;
+					text-decoration: none;
 
 					&:hover {
 						color:#57C5F3;
 						text-decoration: none;
 					}
+					
 				}
 			}
 		}
@@ -123,7 +124,7 @@ header {
 
 
 #hero-image { 
-    background-image:url('../img/hero3.jpg');
+    background-image:url('../img/hero4.jpg');
     background-size:cover;
     background-attachment: fixed;
     width: auto !important;
@@ -186,6 +187,17 @@ footer {
 }
 
 @media only screen and (max-width : 640px) {
+	
+	
+	.service-item {
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+		padding: 10px;
+		h4 {
+			font-size: .7em;
+		}
+	}
 
 	#hero-image {
 		height: 300px;
