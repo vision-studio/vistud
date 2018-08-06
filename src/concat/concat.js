@@ -12651,11 +12651,11 @@ $(document).ready(function(){
 $(document).ready(function(){
   $('#overlay').click(function(){
   	if ($(window).width() < 720) {
-			
-			$('#overlay').fadeToggle();	
 			$('#nav-icon').removeClass('animate-icon');
+			$('#overlay').toggle();	
 		};
-    $('#nav-icon').removeClass('animate-icon');
+		// alert('oy');
+    
   });
 });
 
@@ -12666,14 +12666,17 @@ $(window).resize(function() {
   	$("#overlay").css("display", "none"); }
 });
 
-// $(function(){
+$(function(){
   $(window).scroll(function(){
-    if ($("#overlay").css("display", "none")) 
-	    {
-	    	$('#nav-icon').removeClass('animate-icon');	
-	    }
+    if ($(window).width() < 720 ) {
+	    if ($("#overlay").css("display", "none")) 
+		    {
+		    	$('#nav-icon').removeClass('animate-icon');	
+		    }
+    }
+	  
   });
-// });
+});
 
 
 // console.log('@muslihzarth');
