@@ -12630,14 +12630,13 @@ if (typeof jQuery === 'undefined') {
 
 }(jQuery);
 
-// console.log("gulp bootstrap starter");
+console.log("Vision Studio - 2018");
 $('.page-scroll').on('click', function(e) {
   var target = $(this).attr('href');
 
   $('html, body').animate({
     scrollTop: $(target).offset().top - 60
   }, 800);
-
   e.preventDefault();
 }); 
 
@@ -12649,34 +12648,27 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $('#overlay').click(function(){
-  	if ($(window).width() < 720) {
-			$('#nav-icon').removeClass('animate-icon');
-			$('#overlay').toggle();	
-		};
-		// alert('oy');
-    
+  $('a.menu').click(function(){
+		$('#nav-icon').removeClass('animate-icon');
+		if ($(window).width() <= 720) {
+			$('#overlay').toggle();		
+		}
+		
   });
 });
 
-$(window).resize(function() {
-  if ($(window).width() > 720) {
-  	$("#overlay").css("display", "block"); } 
-  else {
-  	$("#overlay").css("display", "none"); }
+$(document).on("scroll", function() {
+	if($(document).scrollTop()>100) {
+		$("header").css({"background-color":"rgba(0, 0, 0, .8)",
+			"box-shadow":"0px 2px 10px 0px #2982bf"});
+	}
+	else {
+		$("header").css({"background-color":"rgba(0, 0, 0, 0)",
+			"box-shadow":"none"});
+	}
 });
 
-$(function(){
-  $(window).scroll(function(){
-    if ($(window).width() < 720 ) {
-	    if ($("#overlay").css("display", "none")) 
-		    {
-		    	$('#nav-icon').removeClass('animate-icon');	
-		    }
-    }
-	  
-  });
-});
+
 
 
 // console.log('@muslihzarth');
